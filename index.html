@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>Hello World!</title>
+    <style>
+      .btn {
+        margin-top: 20px;
+        cursor: pointer;
+        display: block;
+        border: none;
+        padding: 8px 24px;
+        background-color: #6638f0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using Node.js
+    <span id="node-version"></span>
+    , Chromium
+    <span id="chrome-version"></span>
+    , and Electron
+    <span id="electron-version"></span>
+    .
+    <button class="btn" onclick="getClipboardMultiple()">Get Clipboard Multiple Content</button>
+    <p id="clipboard-content-multiple"></p>
+    <button class="btn" onclick="getClipboardSingle()">Get Clipboard Single Content</button>
+    <p id="clipboard-content-single"></p>
+    <button class="btn" onclick="getClipboardImage()">Get Clipboard Image</button>
+    <img style="width: 50%" id="clipboard-content-image" />
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
