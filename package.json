@@ -39,7 +39,7 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^10.1.5",
-    "electron-builder": "^22.9.1"
+    "electron-builder": "^23.1.0"
   },
   "bugs": {
     "url": "https://github.com/electron/electron-quick-start/issues"
